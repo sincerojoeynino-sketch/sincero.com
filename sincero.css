@@ -1,0 +1,222 @@
+
+body {
+    background-image: url(image.jpeg);
+     background-size: cover;        /* fill box */
+  background-position: center;   /* center image */
+  background-repeat: no-repeat;  /* don't tile */
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px; 
+  bottom: 70%;
+  
+  
+    
+}
+
+#category {
+    font-size: 30px;
+}
+h1{
+ text-align: center;
+    color: #007bff;  
+    position: relative;
+  top: -40px; /* moves the text up */
+  
+
+
+}
+
+#category-filter {
+font-size: 40px;
+
+
+}
+h2 {
+    text-align: center;
+    color: #007bff;
+    font-size: 30px;
+    
+}
+
+/* --- Summary Section --- */
+.summary {
+    text-align: center;
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: gold;
+    width: 810px;
+    height: 200px;
+        position: relative;
+  left: -100px;
+  top:-20px;
+    border-radius: 40px;
+     background-color: gold;
+  border-radius: 40px;
+    border-style:groove;
+    border-width: 10px; /* Uniform width on all four sides */
+    /* The black color (0, 0, 0) is still defined, but its alpha channel is 0.5 */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  color: white; /* Text remains solid white and easy to read */
+
+}
+
+#total-balance {
+    font-size: 2em;
+    font-weight: bold;
+    color: #dc3545; /* Red for expenses */
+}
+
+/* --- Filter --- */
+.filter-controls {
+    margin-top: 10px;
+}
+
+#category-filter {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+/* --- Form Styles --- */
+#expense-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+     width: 800px;
+    height: 600px;
+    font-size: 40px;
+    position: relative;
+  left: -100px;
+  background-color: gold;
+  border-radius: 40px;
+    border-style:groove;
+    border-width: 10px; /* Uniform width on all four sides */
+     /* The black color (0, 0, 0) is still defined, but its alpha channel is 0.5 */
+  background-color: rgba(0, 0, 0, 0.5); 
+  padding: 20px;
+  color: white; /* Text remains solid white and easy to read */
+    
+
+    
+  
+  ;
+
+    
+}
+
+ h2{
+    font-size: 30px;
+ }
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input, .input-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Important for padding/border not to increase total width */
+}
+
+.add-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #218838;
+}
+
+/* --- List Styles --- */
+#expense-list {
+    list-style: none;
+    padding: 0;
+}
+
+#expense-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #007bff;
+    
+     
+}
+
+.expense-info {
+    flex-grow: 1;
+}
+
+.expense-info strong {
+    display: block;
+    font-size: 1.1em;
+    color: #333;
+}
+
+.expense-info small {
+    color: #777;
+}
+
+.delete-btn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: #c82333;
+}
+
+.expense-amount {
+    font-weight: bold;
+    color: #dc3545;
+    margin-right: 15px;
+
+}

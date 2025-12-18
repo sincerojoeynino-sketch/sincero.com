@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Student Expense Tracker</title>
+    <link rel="stylesheet" href="sincero.css">
+</head>
+<body>
+    <img src="image.jpeg">
+    <div class="container">
+        <h1>💰 College Expense Tracker</h1>
+
+        <div class="summary">
+            <h2>Total Spent:  ₱<span id="total-balance">0.00</span></h2>
+            
+            <div class="filter-controls">
+                <label for="category-filter" id="category"><i>Filter by Category:</i></label>
+                <select id="category-filter">
+                    <option value="All">All Categories</option>
+                    <option value="Food">Food 🍔</option>
+                    <option value="Transport">Transport 🚌</option>
+                    <option value="Study">Study/Supplies 📚</option>
+                    <option value="Personal">Personal 🛍️</option>
+                    <option value="Other">Other 🤔</option>
+                </select>
+            </div>
+        </div>
+        
+        <form id="expense-form">
+            <h2 id="addnewexpense">ADD NEW EXPENSES</h2>
+            <div class="input-group">
+                <label for="name" id="name">Name:</label>
+                <input type="text" id="name" required placeholder="e.g., Lunch at campus">
+            </div>
+            <div class="input-group">
+                <label for="amount">Amount (₱):</label>
+                <input type="number" id="amount" step="0.01" required min="0" placeholder="e.g., 8.50">
+            </div>
+            <div class="input-group">
+                <label for="category">Category:</label>
+                <select id="category" required>
+                    <option value="" disabled selected>Select Category</option>
+                    <option value="Food">Food</option>
+                    <option value="Transport">Transport</option>
+                    <option value="Study">Study/Supplies</option>
+                    <option value="Personal">Personal</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <button type="submit" class="add-btn">Add Expense</button>
+        </form>
+
+        <section class="expense-list-section">
+            <h2>Expense History</h2>
+            <ul id="expense-list">
+                </ul>
+        </section>
+    </div>
+
+    <script src="jpey.js"></script>
+</body>
+</html>
